@@ -26,3 +26,7 @@ void main() {
     ),
   );
 }
+
+class GradiantContainer {
+  
+}
