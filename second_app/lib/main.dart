@@ -27,6 +27,6 @@ void main() {
   );
 }
 
-class GradiantContainer {
+class GradiantContainer extends StatelessWidget {
   
 }
