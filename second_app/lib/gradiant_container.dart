@@ -4,17 +4,20 @@ import 'package:second_app/styles_text.dart';
 var startAllignment = Alignment.topLeft;
 var endAllignment = Alignment.bottomRight;
 
+
+
 class GradiantContainer extends StatelessWidget {
-  const GradiantContainer({super.key});
+  const GradiantContainer(this.color1,this.color2,{super.key});
+
+final Color color1;
+final Color color2;
+
   @override
   Widget build(context) {
     return Container(
           decoration: BoxDecoration(
               gradient: (LinearGradient(
-            colors: [
-              const Color.fromARGB(255, 53, 5, 136),
-              Color.fromARGB(255, 78, 7, 200),
-            ],
+            colors: [color1,color2],
             begin: startAllignment,
             end: endAllignment,
           ))),
@@ -25,3 +28,25 @@ class GradiantContainer extends StatelessWidget {
   }
   
 }
+
+// class GradiantContainer extends StatelessWidget {
+//   const GradiantContainer({super.key, required this.colors});
+
+//   final List<Color> colors;
+
+//   @override
+//   Widget build(context) {
+//     return Container(
+//           decoration: BoxDecoration(
+//               gradient: (LinearGradient(
+//             colors: colors,
+//             begin: startAllignment,
+//             end: endAllignment,
+//           ))),
+//           child: Center(
+//             child: StylesText('Hello World'),
+//           ),
+//         );
+//   }
+  
+// }
