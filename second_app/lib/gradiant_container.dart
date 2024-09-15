@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:second_app/styles_text.dart';
 
 var startAllignment = Alignment.topLeft;
 var endAllignment = Alignment.bottomRight;
@@ -8,6 +7,8 @@ var endAllignment = Alignment.bottomRight;
 
 class GradiantContainer extends StatelessWidget {
   const GradiantContainer(this.color1,this.color2,{super.key});
+
+  const GradiantContainer.purple({super.key}) : color1 = Colors.deepPurple, color2 = Colors.indigo;
 
 final Color color1;
 final Color color2;
@@ -22,7 +23,7 @@ final Color color2;
             end: endAllignment,
           ))),
           child: Center(
-            child: StylesText('Hello World'),
+            child: Image.asset('assets/images/dice-2.png'),
           ),
         );
   }
