@@ -24,7 +24,6 @@ final Color color2;
           ))),
           child: Center(
             child: Image.asset('assets/images/dice-2.png'),
-            child: textDirectionToAxisDirection(textDirection),
           ),
         );
   }
