@@ -28,6 +28,7 @@ class GradiantContainer extends StatelessWidget {
       ))),
       child: Center(
           child: Column(
+            mainAxisSize: MainAxisSize.min,
         children: [
           Image.asset(
             'assets/images/dice-6.png',
