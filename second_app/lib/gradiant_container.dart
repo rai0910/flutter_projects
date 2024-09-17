@@ -3,31 +3,36 @@ import 'package:flutter/material.dart';
 var startAllignment = Alignment.topLeft;
 var endAllignment = Alignment.bottomRight;
 
-
-
 class GradiantContainer extends StatelessWidget {
-  const GradiantContainer(this.color1,this.color2,{super.key});
+  const GradiantContainer(this.color1, this.color2, {super.key});
 
-  const GradiantContainer.purple({super.key}) : color1 = Colors.deepPurple, color2 = Colors.indigo;
+  const GradiantContainer.purple({super.key})
+      : color1 = Colors.deepPurple,
+        color2 = Colors.indigo;
 
-final Color color1;
-final Color color2;
+  final Color color1;
+  final Color color2;
 
   @override
   Widget build(context) {
     return Container(
-          decoration: BoxDecoration(
-              gradient: (LinearGradient(
-            colors: [color1,color2],
-            begin: startAllignment,
-            end: endAllignment,
-          ))),
-          child: Center(
-            child: Image.asset('assets/images/dice-2.png'),
+      decoration: BoxDecoration(
+          gradient: (LinearGradient(
+        colors: [color1, color2],
+        begin: startAllignment,
+        end: endAllignment,
+      ))),
+      child: Center(
+          child: Column(
+        children: [
+          Image.asset(
+            'assets/images/dice-6.png',
+            width: 200,
           ),
-        );
+        ],
+      )),
+    );
   }
-  
 }
 
 // class GradiantContainer extends StatelessWidget {
