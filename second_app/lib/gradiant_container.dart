@@ -12,10 +12,10 @@ class GradiantContainer extends StatelessWidget {
 
   final Color color1;
   final Color color2;
-  var activeDiceImage = 'assets/images/dice-4.png';
+  var activeDiceImage = 'assets/images/dice-2.png';
 
   void rollDice() {
-    activeDiceImage = 'assets/images/dice-2.png';
+    activeDiceImage = 'assets/images/dice-4.png';
     print('changing image ..');
   }
 
