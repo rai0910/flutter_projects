@@ -4,7 +4,7 @@ var startAllignment = Alignment.topLeft;
 var endAllignment = Alignment.bottomRight;
 
 class GradiantContainer extends StatelessWidget {
-   GradiantContainer(this.color1, this.color2, {super.key});
+    GradiantContainer(this.color1, this.color2, {super.key});
 
    GradiantContainer.purple({super.key})
       : color1 = Colors.deepPurple,
@@ -12,10 +12,11 @@ class GradiantContainer extends StatelessWidget {
 
   final Color color1;
   final Color color2;
-  var  activeDiceImage = 'assets/images/dice-4.png';
+  var activeDiceImage = 'assets/images/dice-4.png';
 
   void rollDice() {
     activeDiceImage = 'assets/images/dice-2.png';
+    print('changing image ..');
   }
 
   @override
