@@ -6,3 +6,5 @@ class DiceRoller extends StatefulWidget {
     return
   }
 }
+
+class _DiceRollerState 
