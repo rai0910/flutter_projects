@@ -5,11 +5,17 @@ class DiceRoller extends StatefulWidget {
 
   @override
   State<DiceRoller> createState() {
-    return _DiceRollerState()
+    return _DiceRollerState();  
   }
 }
 
 class _DiceRollerState extends State<DiceRoller> {
+var activeDiceImage = 'assets/images/dice-2.png';
+
+  void rollDice() {
+    activeDiceImage = 'assets/images/dice-4.png';
+    print('changing image ..');
+  }
   @override 
   Widget build(context) {
     return Column(

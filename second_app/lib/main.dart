@@ -3,12 +3,12 @@ import 'package:second_app/gradiant_container.dart';
 
 void main() {
   runApp(
-      MaterialApp(
+     const MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.yellow,
         body: GradiantContainer(
-          const  Color.fromARGB(255, 2, 89, 6),
-          const  Color.fromARGB(255, 80, 2, 110)
+          Color.fromARGB(255, 2, 89, 6),
+          Color.fromARGB(255, 80, 2, 110)
             ),
       ),
     ),
