@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 var startAllignment = Alignment.topLeft;
 var endAllignment = Alignment.bottomRight;
 
-class GradiantContainer extends StatelessWidget {
+class GradiantContainer extends StatefulWidget {
     GradiantContainer(this.color1, this.color2, {super.key});
 
    GradiantContainer.purple({super.key})
