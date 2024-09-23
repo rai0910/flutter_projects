@@ -31,9 +31,9 @@ var activeDiceImage = 'assets/images/dice-2.png';
           TextButton(
             onPressed: rollDice,
             style: TextButton.styleFrom(
-                // padding: const EdgeInsets.only(
-                //   top: 20,
-                // ),
+                padding: const EdgeInsets.only(
+                  top: 20,
+                ),
                 foregroundColor: Colors.white,
                 textStyle: const TextStyle(
                   fontSize: 28,
